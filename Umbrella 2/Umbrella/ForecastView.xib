@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForecastView" customModule="Umbrella" customModuleProvider="target">
+            <connections>
+                <outlet property="cityName" destination="dpO-KW-xzb" id="CKg-ex-eTB"/>
+                <outlet property="condition" destination="T5q-n1-Vsh" id="4t9-fz-oP4"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="hl8-Ib-h5e"/>
+                <outlet property="tempMax" destination="mwj-1N-jvh" id="KE3-LB-Xl6"/>
+                <outlet property="tempMin" destination="VkU-Yk-hZh" id="TAa-SI-VM9"/>
+                <outlet property="weatherIcon" destination="Yfx-72-5Wz" id="ZTx-wJ-fsL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryz-Ix-DUj">
+                    <rect key="frame" x="167" y="97" width="10" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="xHZ-IQ-Iz9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tempMax" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwj-1N-jvh">
+                    <rect key="frame" x="185" y="98.5" width="150" height="23"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="ForecastView" text="Conditions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5q-n1-Vsh">
+                    <rect key="frame" x="8" y="133" width="327" height="25"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tempMin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VkU-Yk-hZh">
+                    <rect key="frame" x="8" y="98.5" width="151" height="23"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CityName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpO-KW-xzb">
+                    <rect key="frame" x="8" y="57" width="327" height="25"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chanceRain" translatesAutoresizingMaskIntoConstraints="NO" id="Yfx-72-5Wz">
+                    <rect key="frame" x="149" y="8" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="0Ul-TC-l9f"/>
+                        <constraint firstAttribute="height" constant="45" id="jqA-D9-dUB"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dpO-KW-xzb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="23f-NR-kSh"/>
+                <constraint firstAttribute="trailing" secondItem="T5q-n1-Vsh" secondAttribute="trailing" constant="8" id="2qo-7K-nvt"/>
+                <constraint firstItem="Yfx-72-5Wz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="63R-5g-xmb"/>
+                <constraint firstItem="VkU-Yk-hZh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="30" id="IOR-PS-aI3"/>
+                <constraint firstItem="VkU-Yk-hZh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="OO5-gI-90X"/>
+                <constraint firstItem="T5q-n1-Vsh" firstAttribute="top" secondItem="ryz-Ix-DUj" secondAttribute="bottom" constant="10" id="Oud-Xz-cr5"/>
+                <constraint firstItem="ryz-Ix-DUj" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="30" id="bGs-Qg-89T"/>
+                <constraint firstItem="mwj-1N-jvh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="30" id="ewh-2z-9oz"/>
+                <constraint firstItem="Yfx-72-5Wz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="fhc-GJ-yUu"/>
+                <constraint firstItem="T5q-n1-Vsh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="fzx-Oh-cnv"/>
+                <constraint firstAttribute="trailing" secondItem="mwj-1N-jvh" secondAttribute="trailing" constant="8" id="gZc-3Y-ega"/>
+                <constraint firstItem="ryz-Ix-DUj" firstAttribute="top" secondItem="dpO-KW-xzb" secondAttribute="bottom" constant="15" id="opS-5h-ttX"/>
+                <constraint firstItem="mwj-1N-jvh" firstAttribute="leading" secondItem="ryz-Ix-DUj" secondAttribute="trailing" constant="8" id="rmG-rE-VNm"/>
+                <constraint firstItem="ryz-Ix-DUj" firstAttribute="leading" secondItem="VkU-Yk-hZh" secondAttribute="trailing" constant="8" id="v25-wT-loJ"/>
+                <constraint firstItem="ryz-Ix-DUj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vrM-nd-ahT"/>
+                <constraint firstAttribute="trailing" secondItem="dpO-KW-xzb" secondAttribute="trailing" constant="8" id="wwR-VQ-tYP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="16.5" y="-190"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chanceRain" width="64" height="64"/>
+    </resources>
+</document>
